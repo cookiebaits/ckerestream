@@ -1,0 +1,35 @@
+worker_processes auto;
+rtmp_auto_push on;
+rtmp_auto_push_reconnect 1s;
+events {}
+rtmp {
+    server {
+        listen 1935;
+        listen [::]:1935 ipv6only=on;
+        chunk_size 4096;                
+        allow publish 127.0.0.1;
+        allow publish 24.24.235.55;
+        allow publish 217.196.51.37;
+        allow publish 37.120.147.152;
+        deny publish all;
+
+
+
+        application ${STREAM_APP} {
+            live on;
+            record off;
+            #facebook
+            #instagram
+            #youtube
+            #cloudflare
+            #twitch
+            #rtmp1
+            #rtmp2
+            #rtmp3
+            #kick
+            #trovo
+        }
+
+    }
+
+}
