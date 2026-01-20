@@ -10,6 +10,7 @@ rtmp {
         allow publish 24.24.235.55;
         allow publish 217.196.51.37;
         allow publish 37.120.147.152;
+        allow publish 10.18.0.4;
         deny publish all;
 
 
