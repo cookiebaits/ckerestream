@@ -166,7 +166,7 @@ docker images
 Copy the image ID and then run:
 
 ```
-docker rmi <IMAGE_ID>
+docker rmi prism
 ```
 
 ---
@@ -181,10 +181,4 @@ docker logs prism
 
 ---
 ---
-## Support
-
-Need help with anything, or have thought of an upgrade?
-
-Find us at our Discord server: https://discord.gg/2sbnwze753
-
 
