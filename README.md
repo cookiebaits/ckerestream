@@ -49,7 +49,7 @@ sudo apt update && sudo apt upgrade -y && sudo apt install -y docker.io docker-c
 ---
 * 4- Build our image:
 ```
-docker build -t prism github.com/MorrowShore/Prism
+docker build -t prism github.com/cookiebaits/ckerestream.git
 ```
 ---
 * 5- Verify it has been built: (you should see "prism" in the list)
