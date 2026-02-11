@@ -18,10 +18,6 @@ RUN mkdir -p /tmp/build/nginx-rtmp-module && \
     tar -zxf nginx-rtmp-module-${NGINX_RTMP_MODULE_VERSION}.tar.gz && \
     cd nginx-rtmp-module-${NGINX_RTMP_MODULE_VERSION}
 
-version: "3.8"
-services:    
-    restart: unless-stopped
-
 # nginx goes to /usr/local/nginx
 RUN cd /tmp/build/nginx/${NGINX_VERSION} && \
     ./configure \
